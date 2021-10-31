@@ -14,7 +14,7 @@ import java.util.List;
 // the browser would otherwise deny requests from one to the other.
 
 @RestController
-@CrossOrigin(origins = "http://localhost:4200")
+@CrossOrigin(origins = {"http://localhost:4200", "https://shiny-potato-app.herokuapp.com/"})
 public class PlayerController {
     private final PlayerRepository playerRepository;
 
